@@ -1,0 +1,177 @@
+  /* CONTAINER ITRO MOBI */
+  @media (max-width: 768px) {
+    #container {
+      flex-direction: column; /* Stack elements vertically on mobile */
+    }
+
+    .grid2 {
+      grid-template-columns: 1fr; /* Stack grid items in a single column */
+    }
+
+    .grid3 {
+      width: 100%; /* Full width on mobile */
+      padding: 0; /* Adjust padding for mobile */
+    }
+
+    .items {
+      height: auto; /* Allow items to expand based on content */
+      padding: 10px; /* Reduce padding on mobile */
+    }
+
+    .headings, .abouttext {
+      font-size: 1.5em; /* Adjust font size for readability on mobile */
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr; /* Stack menu items in one column */
+    }
+
+    .menu-grid ul {
+      padding: 0; /* Remove padding on mobile */
+    }
+
+    .grid3 h1 {
+      text-align: center; /* Center align the heading on mobile */
+    }
+
+    .grid3 a {
+      font-size: 14px; /* Adjust link font size */
+    }
+
+    /* ABOUT ME MOBI */
+    #about-me {
+      grid-template-columns: 1fr; /* Stack elements vertically */
+      height: auto; /* Allow height to adjust based on content */
+    }
+
+    .headings {
+      font-size: calc(var(--font-size--84) * 0.6); /* Scale down font size */
+      line-height: 1.2; /* Adjust line height for readability */
+    }
+
+    .abouttext {
+        font-size: 16px; 
+      padding: 20px; /* Adjust padding for mobile */
+    }
+    /* INTEREST MOBI */
+
+    #interest {
+      grid-template-columns: 1fr; /* Stacks columns vertically */
+    }
+    
+    .heading-v1 {
+      font-size: 2em; /* Adjust heading size for mobile */
+    }
+    
+    .answer {
+      font-size: 18px; /* Adjust answer font size for mobile */
+    }
+
+    /* EDUCATION MOBI */
+    .edu-overall {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .pt1 img {
+        height: auto;
+        width: 100%;
+    }
+    
+    .pt2 {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .cardleft {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+
+    /*TOOLS MOBI*/
+    #tools {
+        flex-direction: column;
+    }
+
+    .image-column img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .content-column {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+        gap: 15px;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    /*PROJECT MOBI*/
+    .project-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card,
+    .video-container {
+        flex: 1 1 100%; /* Full-width on mobile */
+    }
+
+    .project-desc,
+    .project-reel {
+        text-align: left;
+    }
+
+  }
+  @media (max-width: 600px) {
+    .theme-toggle img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #theme-toggle-button {
+        padding: 1rem;
+    }
+}
+
+  @media (max-width: 480px) {
+    /* EDUCATION MOBI */
+    .edu-overall {
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-size: 0.85em;
+    }
+    /*TOOLS MOBI*/
+    .logo-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 10px;
+    }
+
+    .logo img {
+        max-height: 25px;
+    }
+    }

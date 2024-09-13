@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EK portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+              publicKey: "n3FxED_kfkv-vlrEV",
+            });
+        })();
+      </script>
+</head>
+<body>
+      
+
+    <div class="menu" id="menu">
+        <button class="menu-button" onclick="toggleMenu()">☰ MENU</button>
+        <div class="dropdown-content" id="dropdown">
+            <div class="menu-grid"> 
+                <ul >
+                    <li><a href="#container" onclick="toggleMenu()">(01)HOME →</a></li>
+                    <li><a href="#container" onclick="toggleMenu()">(03)INTRO →</a></li>
+                    <li><a href="#about-me" onclick="toggleMenu()">(07) ABOUT ME →</a></li>
+                    <li><a href="#pic" onclick="toggleMenu()">(09) CHARACTER DEV →</a></li>
+                    <li><a href="#interest" onclick="toggleMenu()">(11) INTERESTS →</a></li>
+    
+                </ul>
+                <ul>
+                    <li><a href="#education" onclick="toggleMenu()">(12) EDUCATION TIMELINE →</a></li>
+                    <li><a href="#tools" onclick="toggleMenu()">(13) TOOLS →</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">(14) PROJECTS →</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">(22) CONTACT ME →</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="theme-toggle">
+        <button id="theme-toggle-button" onclick="toggleTheme()">
+            <img id="theme-icon" src="assets/moon.png" alt="theme-icon" />
+        </button>
+    </div>
+           
+    <section id="container">
+        
+        <div class=" grey item-branding">
+            <div>
+                <div class="item-number1">(01)</div>
+                <h1>Future us? One Step at a Time</h1></div>
+                  <!-- Light/Dark Mode Toggle Button -->
+ 
+            <div><p>Hi, I’m Chepkonga Emmanuel Kiptoo, BSc IT student.
+                Your friendly neighborhood front-end developer. Let's make the experience you've been longing for.</p>
+            </div>
+            <div>
+                <img src="assets/sign.png" alt="">
+            </div>
+            
+        </div>
+        <div class="  grid2">
+            <div class=" grey items info">
+                <p>&#x1F1F0;&#x1F1EA; <img src="assets/ke.png" style="height: 30px;padding-top: 12px;"></p> <br>
+                <p>Born in Kenya</p><br>
+                <p>Currently live in Nakuru</p>
+
+            </div>
+            <div class="grey items circle-text">
+                <div class="text">
+                    <div class="cicle">
+                        <p>don't just do it -  don't Just do it -</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" grey items profile-picture">
+                <a href="">
+                    <img src="assets/IMG_9727(1)(1).png" alt="">
+                </a>
+            </div>
+            <div class="grey items location">
+                <div><p>0.3031° S, 36.0800° E</p></div>
+                <div> </div>
+                
+                <div style="padding-top: 20px;"><span id="datetime"></span></div>
+
+            </div>
+        </div>
+        <div class="grey grid3">
+            <div><h1>Menu +</h1></div>
+            <div class=" menu-grid"> 
+                <ul >
+                    <li><a href="#container" onclick="toggleMenu()">(01) HOME →</a></li>
+                    <li><a href="#container" onclick="toggleMenu()">(03) INTRO →</a></li>
+                    <li><a href="#about-me" onclick="toggleMenu()">(07) ABOUT ME →</a></li>
+                    <li><a href="#pic" onclick="toggleMenu()">(09)CHAR DEV →</a></li>
+                    <li><a href="#interest" onclick="toggleMenu()">(11) INTERESTS →</a></li>
+    
+                 
+                </ul>
+                <ul>
+                    <li><a href="#education" onclick="toggleMenu()">(12) EDUCATION TIMELINE →</a></li>
+                    <li><a href="#tools" onclick="toggleMenu()">(13) TOOLS →</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">(14) PROJECTS →</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">(22) CONTACT ME →</a></li>
+                </ul>
+            </div>
+
+        </div>
+       
+    </section>
+    <section id="about-me">
+        <div class="big-headings">
+            <div class="item-number1">(07)</div>
+            <h4 class="headings">
+                    LEARN.EARN<br>TEACH.ART.<br>ENCOURAGE.
+            </h4>
+        </div>
+        <div class=" grey abouttext">
+            <p>For the last 3 years, I’ve played a lot of roles. From multiple paths in Uni. And in this timeline what I've is that: live life the way you want to see your self in.<br><br>
+                
+                Let’s work together to be our better version of ourselves</p>
+        </div>
+    </section>
+    <section id="pic">
+        <div class="profile-pic">
+            <div class="item-number1" style="z-index: 100; padding: 20px;">(09)</div>
+            <a href="">
+                <img src="assets/fullimg.jpg" alt="">
+            </a>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+              <a href="">&#x1F4AA; brave</a>
+              <a href=""> &#x2728; creative</a>
+              <a href="">&#x1F33C; calm</a>
+              <a href="">&#x26A1; fast-paced</a>
+              <a href="">&#x1F680; problem-solver</a>
+              <a href="">&#x1F525; go-getter</a>
+              <a href="">&#x1F914; creative</a>
+              <a href="">&#x1F4AA; brave</a>
+              <a href=""> &#x1F974; creative</a>
+              <a href="">&#x1F512; locked-in</a>
+              <a href="">&#x1F4AA; brave</a>
+              <a href="">&#x26A1; fast-paced</a>
+              <a href="">&#x1F33C; calm</a>
+              <a href="">&#x1F4AA; brave</a>
+              <a href=""> &#x2728; creative</a>
+              <a href="">&#x1F33C; calm</a>
+              <a href="">&#x26A1; fast-paced</a>
+              <a href="">&#x1F680; problem-solver</a>
+              <a href="">&#x1F525; go-getter</a>
+              <a href="">&#x1F914; creative</a>
+              <a href="">&#x1F4AA; brave</a>
+              <a href=""> &#x1F974; creative</a>
+              <a href="">&#x1F512; locked-in</a>
+              <a href="">&#x1F4AA; brave</a>
+              <a href="">&#x26A1; fast-paced</a>
+              <a href="">&#x1F33C; calm</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="interest">
+        <div class="column-block dark question" >
+            <div class="item-number1" style="color: whitesmoke;">(11)</div>
+            <div class="heading-v1">
+                <h3>What are my interests?</h3>
+            </div>
+        </div>
+        <div class="column-block dark answer">
+            <p>Some of the worldy things find their ways eye catching to me are:</p><br> </br>
+            <p>&#x2612; Drawing</p><br>
+            <p>&#x2612; Cycling</p><br>
+            <p>&#x2612; Coding</p><br>
+            <p>&#x2612; Gameing</p>
+        </div>
+    </section>
+    <section id="education">
+        <div class="edu-overall">
+            <div class="pt1">
+                <a href="">
+                    <img src="assets/timeline.png" alt="">
+                </a>
+            </div>
+            <div class="pt2" >
+                <div class="cardleft column-block grey ">
+                    <div class="item-number">(12)</div>
+
+                    <h2>FUN FACTS #1</h2>
+                    <p>St Marys is well known  for hosting cultural events and activities that celebrate the diverse traditions and values of the Baringo County.</p>
+
+                </div>
+                
+                <div class="cardleft column-block grey ">
+                    <h2>FUN FACTS #2</h2>
+                    <p>Rongai Agri-tech High school was founded by St. John Baptist de La Salle, the founder of the Institute of the Brothers of the Christian Schools, is that he pioneered the idea of modern classroom teaching </p>
+
+                </div>
+
+                <div class="cardleft column-block grey ">
+                    <h2>FUN FACTS #3</h2>
+                    <p>Kabarak is not only a university , but it also contains Kabarak High School and Kabarak Primary School under one roof!s.</p>
+
+                </div>
+            </div>
+
+            
+        </div>
+
+    </section>
+    <section id="tools">
+        <div class="image-column">
+            <img src="/assets/person-using-laptop.jpg" alt="Person working on laptop">
+        </div>
+        <div class="content-column">
+            <div class="item-number">(15)</div>
+            <h4>Tools I'm Familiar With</h4>
+            <div class="logo-grid">
+                <div class="logo"><img src="assets/tools/vs-LJZWQXrrs-transformed.png" style="height: 60px;"></div>
+                <div class="logo"><img src="assets/tools/canva-transformed.png" alt=""></div>
+                <div class="logo"><img src="assets/tools/brave2-transformed.png" alt=""></div>
+                <div class="logo"><img src="assets/tools/nodejs-transformed.png" alt=""></div>
+                <div class="logo"><img src="assets/tools/clip_studio-transformed.png" alt=""></div>
+                <div class="logo"><img src="assets/tools/adobe.webp" alt=""></div>
+                <div class="logo"><img src="assets/tools/xampp-transformed.png" alt=""></div>
+                <div class="logo"><img src="assets/tools/photoshop-transformed.png" alt=""></div>
+                <div class="logo"><img src="assets/tools/emaijs-transformed.png" alt=""></div>
+                <div class="logo"><img src="assets/tools/firebase-transformed.png" alt=""></div>
+                <div class="logo"><img style="height: 90px;" src="assets/tools/flutter-transformed.webp" alt=""></div>
+                <div class="logo"><img src="assets/tools/chatgpt.webp" alt=""></div>
+                <div class="logo"><img src="assets/tools/vscode-transformed.png" style="height: 60px;" alt=""></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="project-group">
+
+            <!-- Second card -->
+                       <!-- Second video container -->
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="assets/tasty.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="card card-dark">
+                <div class="card-content">
+                    <div class="card-number">(18)</div>
+                    <div>
+                        <div class="logo-title">Tastytales-website</div>
+                        <p class="description">Tastetales is an online recipe website designed to inspire home cooks with a wide variety of delicious, easy-to-follow recipes from around the world. It offers step-by-step instructions, ingredient lists, and helpful tips to make cooking fun and accessible for everyone.  </p>
+                    </div>
+                    <a href="https://emmanuel-kip-too.github.io/tastytales-website/" class="button">VISIT WEBSITE →</a>
+                </div>
+            </div>
+    
+  
+    
+            <!-- Third card -->
+            <div class="card card-dark">
+                <div class="card-content">
+                    <div>
+                        <div class="logo-title">Rock-Paper-Scissors</div>
+                        <p class="description">Rock paper scissors is a mobile ratioed javascript game.The three objects( rock, paper and scissors) collide with each other and the stronger for the two converts the other to be one of their won</p>
+                    </div>
+                    <a href="https://dot-theduck.github.io/rockpaperscissors/" class="button">VISIT WEBSITE →</a>
+                </div>
+            </div>
+    
+            <!-- Third video container -->
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="assets/rps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+                        <!-- First card -->
+                        <!-- First video container -->
+                        <div class="video-container">
+                            <video autoplay loop muted>
+                                <source src="assets/sonic.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+            <div class="card card-dark">
+                <div class="card-content">
+                    <div>
+                        <div class="logo-title">Sonic Runner</div>
+                        <p class="description">Sonic Runner is a web-based JavaScript game where players control a character running through levels, avoiding obstacles and collecting coins. The game is taught by youtuber <a href="https://www.youtube.com/@JSLegendDev" style="text-decoration: dashed; color: lightblue;">@JSLegendDev </a>(still ongoing).</p>
+                    </div>
+                    <a  class="button">VISIT WEBSITE →</a>
+                </div>
+                
+            </div>
+    
+
+    
+        </div>
+    </section>
+    
+    
+    
+    <section id="contact">
+        <div class="left-column">
+            <h4>Change the Way You Do Business, For the Better</h4>
+            <img src="assets/chat.png" alt="">
+        </div>
+        <div class="right-column" id="emailModal">
+            <h10>Let's enhance your business potential with seamless workflows, efficient processes and tools, a stronger brand presence, and all-around more operational clarity. And when we do, we'll elevate your impact.</h10><br>
+            <h10>Are you ready?</h10>
+            <form id="emailForm">
+                <input type="text" name="name" id="name" placeholder="Your name*" required>
+                <input type="email" id="email" name="email" placeholder="Your email*" required>
+                <select required>
+                    <option value="" disabled selected>How did you hear about me?*</option>
+                    <option value="option1">Google Search</option>
+                    <option value="option1">A friend</option>
+                    <option value="option2">Github</option>
+                    <option value="option3">Facebook</option>
+                </select>
+                <input type="text" name="subject" id="subject" placeholder="Your Subject*" required>
+                <textarea id="message" name="message" placeholder="Enter Your Message*" required></textarea>
+                <button class="button-sbt" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-socials">
+
+                <a href="https://www.instagram.com/dot.the.duck/" target="_blank">
+                    <img src="assets/ig.png" alt="Instagram" />
+                </a>
+                <a href="https://github.com/Dot-theduck" target="_blank">
+                    <img src="assets/github.png" alt="github" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="assets/linkedin.png" alt="LinkedIn" />
+                </a>
+            </div>
+    
+            <div class="footer-info">
+                <p> Created by&copy; Dottheduck 2024.</p>
+            </div>
+    
+            <div class="footer-links">
+                <button id="privacy-policy" onclick="openPrivacyPolicy()">Privacy Policy</button>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="script.js"></script>
+
+    <script>
+        function openPrivacyPolicy() {
+    window.location.href = 'privacy-policy.html'; 
+}
+       const text = document.querySelector('.cicle p');
+        text.innerHTML = text.innerText.split('').map(
+        (char, i) =>
+            `<span style="transform: rotate(${i * 10}deg);">${char}</span>`
+        ).join('');
+
+        
+    </script>
+    <script>
+               // Theme toggle functionality
+// Get the body element and the theme toggle button
+const body = document.body;
+const themeToggleButton = document.getElementById('theme-toggle-button');
+const themeIcon = document.getElementById('theme-icon');
+
+// Function to toggle between light and dark modes
+function toggleTheme() {
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        themeIcon.src = 'assets/moon.png'; // Set to sun icon
+    } else {
+        body.classList.add('dark-mode');
+        themeIcon.src = 'assets/sun.png'; // Set to moon icon
+    }
+}
+
+        
+        // Select all video elements
+        const videos = document.querySelectorAll('video');
+    
+        videos.forEach(video => {
+            video.parentElement.addEventListener('mouseenter', () => {
+                video.play();  
+            });
+    
+            video.parentElement.addEventListener('mouseleave', () => {
+                video.pause(); 
+            });
+        });
+    </script>
+
+    
+</body>
+</html>
