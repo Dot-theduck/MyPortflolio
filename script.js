@@ -4,7 +4,7 @@ window.onscroll = function() {
 };
 
 var menu = document.getElementById("menu");
-var stickyPoint = 100; // Show menu after scrolling 100px
+var stickyPoint = 900;
 
 function stickyMenu() {
     if (window.pageYOffset > stickyPoint) {

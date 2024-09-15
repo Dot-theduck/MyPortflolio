@@ -1,30 +1,47 @@
   /* CONTAINER ITRO MOBI */
   @media (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+  }
+
     #container {
-      flex-direction: column; /* Stack elements vertically on mobile */
+      flex-direction: column; 
     }
+    /*LIGHT AND DARK*/
+    .theme-toggle {
+      justify-content: right;
+      padding: 1% 0;
+  }
+
+  #theme-toggle-button img {
+      width: 24px;
+      height: 24px;
+  }
+
+  #theme-toggle-button {
+      padding: 8px;
+  }
 
     .grid2 {
-      grid-template-columns: 1fr; /* Stack grid items in a single column */
+      grid-template-columns: 1fr; 
     }
 
-    .grid3 {
-      width: 100%; /* Full width on mobile */
-      padding: 0; /* Adjust padding for mobile */
+    .grid3, .circle-text, .menu {
+      display: none;
     }
 
     .items {
-      height: auto; /* Allow items to expand based on content */
-      padding: 10px; /* Reduce padding on mobile */
+      height: auto; 
+      padding: 10px; 
     }
 
     .headings, .abouttext {
-      font-size: 1.5em; /* Adjust font size for readability on mobile */
+      font-size: 1.5em; 
     }
 
     .menu-grid {
       display: grid;
-      grid-template-columns: 1fr; /* Stack menu items in one column */
+      grid-template-columns: 1fr; 
     }
 
     .menu-grid ul {
@@ -54,6 +71,22 @@
         font-size: 16px; 
       padding: 20px; /* Adjust padding for mobile */
     }
+
+    /*PIC MOBI*/
+    .items {
+      /* Adjust padding and other styles as needed */
+      padding: 1em;
+      height: auto; /* Allow height to adjust automatically */
+    }
+  .logos{
+    margin: 0;
+  }
+    .profile-picture img {
+      /* Ensure image scales well on smaller devices */
+      height: auto; 
+      width: 100%;
+    }
+
     /* INTEREST MOBI */
 
     #interest {
@@ -140,6 +173,43 @@
         text-align: left;
     }
 
+    /*CONTACT MOBI*/
+    #contact {
+      padding: 20px;
+  }
+.description{
+  font-size: 16px;
+}
+  .left-column,
+  .right-column {
+      flex: 1 1 100%;
+      padding: 0;
+  }
+
+  .left-column {
+      padding-bottom: 20px;
+  }
+
+  .right-column {
+      padding-top: 20px;
+  }
+
+  h4 {
+      font-size: 1.5em; 
+  }
+
+  h10 {
+      font-size: 1em; 
+  }
+
+  input, select, textarea {
+      font-size: 14px; 
+  }
+
+  .button-sbt {
+      font-size: 16px; 
+  }
+
   }
   @media (max-width: 600px) {
     .theme-toggle img {
@@ -153,6 +223,9 @@
 }
 
   @media (max-width: 480px) {
+    .grid3, .circle-text, .menu {
+      display: none;
+    }
     /* EDUCATION MOBI */
     .edu-overall {
         padding: 10px;
@@ -174,4 +247,17 @@
     .logo img {
         max-height: 25px;
     }
+    /*PIC MOBI*/
+    .items {
+      padding: 0.75em; /* Adjust padding */
     }
+  
+    .profile-picture img {
+      /* Additional adjustments for very small screens */
+      height: auto;
+      width: 100%;
+    }
+    }
+
+
+

@@ -2,6 +2,8 @@
     --color--bg: whitesmoke;
     --color--text: #1b1b1b;
     --color--bg-grey-bg: #e8e8e8;
+
+    --color--black: hsl(225, 15%, 6%);
     --color--border: #ebe8e500;
     --swatch--green-color: #FFDC7F;
     --swatch--dark: #1b1b1b;
@@ -13,6 +15,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -27,7 +30,7 @@ body {
     font-family: Manrope, sans-serif;
     margin: 2%;
     height: auto;
-    color: te;
+    color: grey;
     background-color: var(--color--bg);
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
@@ -44,7 +47,7 @@ body.dark-mode {
     color: whitesmoke;
 }
 
-.dark-mode .grey {
+.dark-mode .grey,  .dark-mode .darker {
     background-color: var(--swatch--dark);
     border: solid 1px var(--color--bg-grey-bg);
     border-radius: 20px;
@@ -64,14 +67,19 @@ body.dark-mode {
     display: flex;
     justify-content: right;
     align-items: center;
+    padding: .5% 0.5% 0;
 }
 
 #theme-toggle-button {
-    background-color: transparent;
+    background-color: var(--color--bg-grey-bg);
+    border-radius: 50%;
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease;
 
+}
+.dark-mode #theme-toggle-button{
+    background-color: transparent;
 }
 #theme-toggle-button img{
     width: 32px;
@@ -100,8 +108,6 @@ body.dark-mode {
     border: none;
     color: white;
     font-size: 18px;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 /* Dropdown styling */
@@ -109,16 +115,19 @@ body.dark-mode {
     display: none;
     position: absolute;
     background-color: var(--swatch--dark);
+    opacity: 1; 
+ 
     right: 0;
     margin-top: 10px;
     border-radius: 5px;
 }
 .menu-grid{
-    padding: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
+.dark-mode .menu-grid a {
+    color: whitesmoke;
+}
 .dropdown-content a {
     color: whitesmoke;
     font-size: 13px;
@@ -154,6 +163,7 @@ body.dark-mode {
 section{
     padding: 15px;
     border-radius: 40px;
+    font-family: Manrope, sans-serif;
 }
 #container {
     display: flex;
@@ -290,15 +300,26 @@ section{
 
 
 
-  .items img {
-    height: 150px;
+  .profile-picture img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+     border-radius: 10px;
+    
   }
-
+  .profile-picture{
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .dark-mode   .profile-picture{
+    border: none;
+  }
   .grid3 {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 20px;
-    width: 1000px;
+    padding: 20px 20px 0 0;
+    width: 100%;
     background-color: var(--color--bg-grey-bg);
   }
 
@@ -310,14 +331,19 @@ section{
   .grid3 a {
     text-decoration: none;
     color: #555;
-    font-size: 12px;
-    padding: 20px;
+    font-size: 13px;
+    padding: 0;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end;
+    margin: 0;
   }
 .menu-grid ul{
     list-style: none;
-    justify-content: baseline;
-    text-align: left;
-    font-family: Manrope, sans-serif;
+    padding: 0;
 }
 
 
@@ -331,6 +357,8 @@ section{
   .big-headings {
     background-color: var(--swatch--green-color);
     position: relative;
+    border: solid 1px transparent;
+    border-radius: 30px;
   }
 
   .headings {
@@ -345,10 +373,42 @@ section{
 
   .abouttext {
     background-color: var(--color--bg-grey-bg);
-    padding: 4%;
+    padding: 7%;
+    font-size: 18px;
+  }
+  .cv-download {
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center;
+    margin-top: 40px;
+}
+.download-btn {
+    font-weight: bolder;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    padding: 1.25rem 3rem;
+    border: 1.3px solid var(--color--black);
+    text-decoration: none;
+    color: var(--swatch--very-dark);
+    background: var(--color--bg-grey-bg);
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .dark-mode  .download-btn{
+    color: var(--swatch--very-dark);
+  }
+  .download-btn:hover {
+    background-color: var(--color--black); /* Add a hover effect */
+    color: var(--color--bg-grey-bg); /* Switch text color on hover */
+    border-color: var(--color--bg-grey-bg);
+  }
+  
+  .download-btn:active {
+    background-color: var(--swatch--green-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
   }
 
-  
 
 /*profile section*/
 #pic {
@@ -366,6 +426,7 @@ section{
     width: 100%;
     max-width: none;
     height: 100%;
+    border-radius: 15px;
     display: inline-block;
     filter: grayscale(100%);
     transition: filter .3s;
@@ -480,18 +541,25 @@ section{
 
 
 /*EDUCATION*/
+#education {
+    width: auto;
+}
+
 .edu-overall {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     height: auto;
     padding: 20px;
+    flex-wrap: nowrap; /* Allow wrapping on smaller screens */
 }
 
 /* Image section */
 .pt1 img {
-    height: 900px;
+    max-width: 100%; 
+    border-radius: 15px;
+       height: auto; 
     object-fit: contain;
 }
 
@@ -500,42 +568,52 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    width: 600px;
-    padding-left: 20px;
+    width: 66%; 
+    max-width: 600px; 
+    padding-left: 10px;
 }
 
-/* Styling for the card */
+/* Card styling */
 .cardleft {
+    height: 220px;
     padding: 20px;
     border-radius: 10px;
     font-family: Manrope, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     background-color: var(--color--bg-grey-bg);
 }
 
 /* Heading style */
-h2 {
-    font-size: 1.5em;
+#education h2 {
+    font-size: 1em;
     color: #333;
     margin-bottom: 10px;
 }
 
 /* Paragraph style */
-p {
-    font-size: 1em;
+#education p {
+    font-size: .8em;
     color: #6f6f6f;
     line-height: 1.5em;
 }
-
+.dark-mode #education p, .dark-mode #education h2{
+    color: whitesmoke;
+}
 /* Item number styling */
-.item-number {
+.itm-number {
     position: absolute;
     top: 10px;
     right: 10px;
     color: #6f6f6f;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
-
+.dark-mode .itm-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: whitesmoke;
+    font-size: 0.7em;
+}
 
 
 
@@ -549,6 +627,8 @@ p {
     background-color: var(--swatch--green-color);
     padding: 40px;
     border-radius: 10px;
+    margin: 0 auto; 
+    flex-wrap: wrap;
 }
 .left-column {
     flex: 1;
@@ -558,12 +638,12 @@ p {
     flex: 1.5;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2.2em;
     margin-bottom: 20px;
     color: #333;
 }
 h10 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.6;
     font-weight: 600;
     color: var(--swatch--dark);
@@ -576,7 +656,7 @@ input, select, textarea {
     width: 100%;
     padding: 10px;
     border-radius: .922em;
-    font-size: 20px;
+    font-size: 16px;
     background-color: var(--swatch--dark);
     color: white;
     border-radius: 5px;
