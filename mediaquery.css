@@ -63,7 +63,7 @@
     }
 
     .headings {
-      font-size: calc(var(--font-size--84) * 0.6); /* Scale down font size */
+      font-size: calc(var(--font-size--84) * 0.4); /* Scale down font size */
       line-height: 1.2; /* Adjust line height for readability */
     }
 
