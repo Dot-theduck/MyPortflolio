@@ -71,7 +71,7 @@ body.dark-mode {
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease;
-    
+
 }
 #theme-toggle-button img{
     width: 32px;
@@ -120,7 +120,7 @@ body.dark-mode {
 }
 
 .dropdown-content a {
-    color: white;
+    color: whitesmoke;
     font-size: 13px;
     font-family: Manrope, sans-serif;
     width: 200px;
@@ -131,7 +131,8 @@ body.dark-mode {
 }
 
 .dropdown-content a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--swatch--green-color);
 }
 
 /* Dropdown shown when clicked */
