@@ -375,6 +375,7 @@ section{
     background-color: var(--color--bg-grey-bg);
     padding: 7%;
     font-size: 18px;
+      border-radius: 5px;
   }
   .cv-download {
     cursor: pointer;
