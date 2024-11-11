@@ -2,7 +2,7 @@
        <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=007acc&height=120&section=header"/>
    </a>
     
-   ![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=007acc&size=35&center=true&vCenter=true&width=1000&lines=Hi,there+I'm+Lawrence;A+developer+from+Kenya;Welcome+to+my+profile;)
+   ![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=007acc&size=35&center=true&vCenter=true&width=1000&lines=Hi,there+I'm+Emmanuel;;A+developer+from+Kenya;Welcome+to+my+profile;)
 
    <br>
 
@@ -22,12 +22,9 @@ This page showcases a variety of  applications and scripts that I've developed o
   ![Git](https://img.shields.io/badge/-Git-black?logo=git&style=social)&nbsp;&nbsp;
   ![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&style=social)&nbsp;&nbsp;
   ![Javascript](https://img.shields.io/badge/-Javascript-black?logo=git&style=social)&nbsp;&nbsp;
-  ![Rust](https://img.shields.io/badge/-Rust-black?logo=Rust&style=social)&nbsp;&nbsp;
-  ![Astro](https://img.shields.io/badge/-Astro-black?logo=Astro&style=social)&nbsp;&nbsp;
   ![Express](https://img.shields.io/badge/-Express-black?logo=Express&style=social)&nbsp;&nbsp;
-  ![Django](https://img.shields.io/badge/-Django-black?logo=Django&style=social)&nbsp;&nbsp;
   <!--Graph-->
-![Trent130's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=trent130&bg_color=0d1117&color=ffffff&line=00b3ff&point=f9fafa&area=true&hide_border=true)
+![Dottheduck's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=trent130&bg_color=0d1117&color=ffffff&line=00b3ff&point=f9fafa&area=true&hide_border=true)
 
 <!--Skill And More Information--> 
 <div align="center">
